@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_count_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp_35"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_100"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <include layout="@layout/item_wheel"
+             android:id="@+id/layout_wheel_view"
+             android:visibility="visible"
+             android:layout_marginLeft="@dimen/dp_24"
+             android:layout_marginRight="@dimen/dp_24"
+             android:layout_height="0dp"
+             android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_50"
+             android:layout_marginBottom="@dimen/dp_100"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_set_time2">
+
+    </include>
+
+    <Button
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        android:id="@+id/btn_set_time"
+        android:background="@drawable/shape_circle_light_bule"
+        android:text="@string/settings_time"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginBottom="@dimen/dp_40"/>
+
+
+    <Button
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_40"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/btn_set_time2"
+        android:background="@drawable/shape_circle_light_bule"
+        android:text="@string/settings_time"
+        android:layout_marginBottom="@dimen/dp_40"
+        />
+    <Button
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_40"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/shape_circle_light_bule"
+        android:id="@+id/btn_start_countdown"
+        android:text="@string/start"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_60"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">计时器</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="count_down_setting">倒计时设置</string>
+    <string name="hour">时</string>
+    <string name="min">分</string>
+    <string name="sec">秒</string>
+    <string name="settings_time">设置时间</string>
+    <string name="countdown">倒计时中...</string>
+    <string name="start">开始</string>
+    <string name="stop">暂停</string>
+    <string name="count_down">倒计时</string>
+</resources>
